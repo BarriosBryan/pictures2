@@ -1,4 +1,5 @@
 import {useState} from "reacct"
+import './SearchBar.css'
 
 function SearchBar ({ onSubmit }){
     const [term, setTerm] = useState('')
@@ -21,7 +22,7 @@ function SearchBar ({ onSubmit }){
     }
 
     return(
-        <div>
+        <div className=".search-bar">
             <h1>Search Bar</h1>
             <from onSubmit={handleFromSubmit}>
                 confirma tu busqueda: {term}
